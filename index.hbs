@@ -4,9 +4,10 @@
 <h3 style="text-align: center;">{{@blog.description}}</h3>
 
 {{#foreach posts}}
+
 <div class="inner cover post post-head">
-<h2 class="cover-heading post-title"><a href="{{url}}">{{{title}}}</a></h2>
-		<time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time>
+	<h2 class="cover-heading post-title"><a href="{{url}}">{{{title}}}</a></h2>
+	<time datetime="{{date format="YYYY-MM-DD"}}">{{date format='YYYY MMM DD'}}</time>
 </div>
 
 <div class="inner cover post post-body">
@@ -14,9 +15,4 @@
 </div>
 {{/foreach}}
 
-
-{{!! After all the posts, we have the previous/next pagination links }}
 {{pagination}}
-
-<div class="inner cover container post post-foot">
-</div>

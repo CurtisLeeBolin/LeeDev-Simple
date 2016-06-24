@@ -1,7 +1,14 @@
 {{!< default}}
 
 {{#post}}
-  <h1>{{title}}</h1>
-  {{content}}
+
+  <div class="inner cover post post-head">
+  	<h2 class="cover-heading post-title"><a href="{{url}}">{{{title}}}</a></h2>
+  	<time datetime="{{date format="YYYY-MM-DD"}}">{{date format='YYYY MMM DD'}}</time>
+  </div>
+
+  <div class="inner cover post post-body">
+    {{content}}
+  </div>
 
 {{/post}}
